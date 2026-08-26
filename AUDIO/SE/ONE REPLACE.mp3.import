@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0vyyu6jyec8"
+path="res://.godot/imported/ONE REPLACE.mp3-a688c4df98e7fe54fea9c2cba5c2142b.mp3str"
+
+[deps]
+
+source_file="res://AUDIO/SE/ONE REPLACE.mp3"
+dest_files=["res://.godot/imported/ONE REPLACE.mp3-a688c4df98e7fe54fea9c2cba5c2142b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

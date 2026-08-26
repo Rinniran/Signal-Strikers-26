@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bpglyjgms8acd"]
+
+[node name="Snowy" type="Node3D" unique_id=2115235610]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=280308515]
+transform = Transform3D(0.12160113, 0.37440482, -0.9192574, -0.049099267, 0.92726535, 0.3711715, 0.99136394, 0, 0.13113952, 0, 0, 0)
+light_color = Color(0.9000001, 0, 1, 1)
+light_energy = 2.165
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=1429014710]
+transform = Transform3D(-0.0015700252, 0.018180756, 0.99983317, 0.9962919, 0.08603662, -4.440892e-16, -0.08602232, 0.99612623, -0.018248424, 0, 0, 0)
+light_color = Color(0, 0.01666689, 1, 1)
+light_energy = 2.801
+light_indirect_energy = 9.174
+light_volumetric_fog_energy = 3.091
+light_angular_distance = 33.33
+light_specular = 7.058
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=927056600]
+transform = Transform3D(0.995874, 0.08544021, -0.030586435, -0.028908815, -0.020804232, -0.99936545, -0.08602233, 0.99612623, -0.018248426, 0, 0, 0)
+light_color = Color(0, 1, 0.9333334, 1)
+light_energy = 2.165
+light_indirect_energy = 9.174
+light_volumetric_fog_energy = 3.091
+light_angular_distance = 33.33
+light_specular = 7.058
+sky_mode = 1

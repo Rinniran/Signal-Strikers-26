@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c2245wkkn5np5"]
+
+[node name="Night" type="Node3D" unique_id=1593303374]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=344553429]
+transform = Transform3D(1, 0, 0, 0, 0.35434046, 0.93511647, 0, -0.93511647, 0.35434046, 0, 0, 0)
+light_color = Color(0.31066668, 0.120000005, 1, 1)
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=1400526417]
+transform = Transform3D(1, 0, 0, 0, -0.14929864, -0.98879224, 0, 0.98879224, -0.14929864, 0, 0, 0)
+light_color = Color(1, 0.9853333, 0.120000005, 1)
+light_energy = 0.711
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=1324098359]
+transform = Transform3D(1, 0, 0, 0, 0.99402845, -0.10912214, 0, 0.10912214, 0.99402845, 0, 0, 0)
+light_color = Color(0.36240014, 0.072000004, 0.6, 1)
+light_energy = 2.405
+light_angular_distance = 30.96
+sky_mode = 1
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="." unique_id=1683016928]
+transform = Transform3D(1, 0, 0, 0, -0.89959085, 0.43673363, 0, -0.43673363, -0.89959085, 0, 0, 0)
+light_color = Color(0.072000004, 0.12480008, 0.6, 1)
+light_energy = 2.405
+light_angular_distance = 30.96
+sky_mode = 1

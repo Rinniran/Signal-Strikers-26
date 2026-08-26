@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://4frppa4hw86v"
+path="res://.godot/imported/CharSetA.fnt-c72ae406df702a74a94f4f82a1d016a7.fontdata"
+
+[deps]
+
+source_file="res://TEX/UI/CharSetA.fnt"
+dest_files=["res://.godot/imported/CharSetA.fnt-c72ae406df702a74a94f4f82a1d016a7.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

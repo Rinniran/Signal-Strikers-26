@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://nsm4ntqwnjc0"]
+
+[ext_resource type="Texture2D" uid="uid://dy2a7m2h7e2he" path="res://CHARACTERMESH/RIAN/hair.png" id="1_cj62p"]
+
+[resource]
+resource_name = "hair"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 2
+diffuse_mode = 1
+albedo_texture = ExtResource("1_cj62p")
+roughness = 0.5

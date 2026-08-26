@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bnxbd380sviwo"]
+
+[ext_resource type="Script" uid="uid://8mpalret4pi1" path="res://SRC/PlayerCam.gd" id="1_etpxa"]
+
+[node name="CamPivot" type="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 0.93713, 0.348981, 0, -0.348981, 0.93713, -0.168372, 3.86616, 0.544619)
+script = ExtResource("1_etpxa")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.989551, 0.144183, 0, -0.144183, 0.989551, 0, 0.127204, 3.71447)

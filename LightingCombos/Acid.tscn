@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://y40ug3bsvamp"]
+
+[node name="Acid" type="Node3D" unique_id=2110977347]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1232448980]
+transform = Transform3D(1, 0, 0, 0, 0.022074293, -0.99975634, 0, 0.99975634, 0.022074293, 0.5017395, 0, 2.8121057)
+light_color = Color(0.33133334, 1, 0.32, 1)
+light_energy = 3.488
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=248519985]
+transform = Transform3D(1, 0, 0, 0, 0.64047503, 0.7679789, 0, -0.7679789, 0.64047503, 0.5017395, 0, 2.8121057)
+light_color = Color(0.11200012, 0, 0.48, 1)
+light_energy = 3.488
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=568312717]
+transform = Transform3D(1, 0, 0, 0, -0.81863004, 0.5743215, 0, -0.5743215, -0.81863004, 0.5017395, 0, 2.8121057)
+light_color = Color(0.2640001, 0, 0.48, 1)
+light_energy = 3.488
+sky_mode = 1

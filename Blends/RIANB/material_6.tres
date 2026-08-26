@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cs0vf81sm3qwo"]
+
+[ext_resource type="Texture2D" uid="uid://pxw6qj3u4hps" path="res://Blends/RIANB/Rian_6.png" id="1_0b4bd"]
+
+[resource]
+resource_name = "material_6"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 2
+albedo_texture = ExtResource("1_0b4bd")
+texture_filter = 0
+texture_repeat = false
+metadata/_gltf_primary_texture_coord = 0

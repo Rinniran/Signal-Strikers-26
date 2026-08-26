@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxh3htle5bblp"]
+
+[ext_resource type="PackedScene" uid="uid://dbwomsms3anfh" path="res://Blends/RICKET/Ricket.blend" id="1_g4att"]
+
+[node name="Ricket" unique_id=1942469836 instance=ExtResource("1_g4att")]
+
+[node name="mouth_test" parent="." index="0" unique_id=1890096659]
+visible = false
+
+[node name="shades" parent="." index="2" unique_id=536262363]
+visible = false
+
+[node name="zappy" parent="." index="3" unique_id=1578221176]
+visible = false

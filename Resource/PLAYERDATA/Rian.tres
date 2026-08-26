@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Playerdata" format=3 uid="uid://dq0pd85l70se5"]
+
+[ext_resource type="Script" uid="uid://dyntto8ua8eak" path="res://Resource/PlayerData.gd" id="1_r78fh"]
+
+[resource]
+script = ExtResource("1_r78fh")
+Name = "Rian"
+maxhealth = 640
+walkspeed = 200.0
+dashspeed = 400.0
+jumpspeed = -20.725
+fallspeed = 37.75
+fastfallspeed = 250.0
+wallrunspeed = 400.0

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b724o5sugxy5e"]
+
+[ext_resource type="Texture2D" uid="uid://br1gvai5o37tf" path="res://CHARACTERMESH/RIAN/rain_mouth.png" id="1_4avue"]
+
+[resource]
+resource_name = "mouth"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 2
+albedo_texture = ExtResource("1_4avue")
+roughness = 0.5
+texture_filter = 2

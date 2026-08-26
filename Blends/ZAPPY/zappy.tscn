@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwy88oej44ebt"]
+
+[ext_resource type="PackedScene" uid="uid://psp4b3ibmovq" path="res://CHARACTERMESH/ZAPPY/Zappy.blend" id="1_guxn3"]
+
+[node name="Zappy" instance=ExtResource("1_guxn3")]
+
+[node name="Skeleton3D" parent="bones" index="0"]
+bones/0/position = Vector3(-1.85038e-07, 0.445512, -0.0606965)
+bones/0/rotation = Quaternion(0.707107, -3.06266e-07, -3.06266e-07, 0.707107)
+bones/1/position = Vector3(3.1519e-14, -2.04882e-32, -4.55192e-14)
+bones/1/rotation = Quaternion(-0.995517, 0.010293, -0.0923427, 0.017691)
+bones/2/rotation = Quaternion(0.038307, -0.00919133, -0.0151311, 0.999109)
+bones/5/rotation = Quaternion(4.69962e-08, 4.02851e-08, -0.726503, 0.687163)
+bones/6/rotation = Quaternion(-0.129925, -0.804741, 0.44184, 0.374552)
+bones/7/rotation = Quaternion(-0.299053, -0.0083644, -0.204678, 0.931989)
+bones/8/rotation = Quaternion(-0.203733, 0.00113812, -0.139615, 0.96902)
+bones/9/rotation = Quaternion(4.63459e-08, -3.91091e-08, 0.726503, 0.687163)
+bones/10/rotation = Quaternion(0.226, 0.757037, -0.420911, 0.445705)
+bones/11/rotation = Quaternion(-0.0066834, 0.00927019, -7.88991e-06, 0.999935)
+bones/12/rotation = Quaternion(-4.02943e-08, -4.91178e-08, -6.23163e-09, 1)
+bones/13/position = Vector3(0.0168173, 0.435102, -0.195201)
+bones/13/rotation = Quaternion(-0.0230702, 0.538251, -0.148069, 0.829355)
+bones/14/position = Vector3(-0.0168173, 0.435102, -0.195201)
+bones/14/rotation = Quaternion(-0.0230702, -0.538251, 0.148068, 0.829355)
+bones/15/position = Vector3(-0.121888, 8.43268e-10, 0.00488972)
+bones/15/rotation = Quaternion(-0.0425589, 0.974112, 0.221942, -0.00605967)
+bones/16/rotation = Quaternion(-0.0089872, -6.45302e-05, 0.00728242, 0.999933)
+bones/17/rotation = Quaternion(0.00812677, -0.0153358, -0.00421268, 0.99984)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(-0.042496, -0.204273, 0.963739, -0.166356)
+bones/19/position = Vector3(0.121888, -8.76702e-10, 0.0048895)
+bones/19/rotation = Quaternion(0.504029, 0.860811, 0.0286759, -0.0643187)
+bones/20/rotation = Quaternion(-0.643559, -0.00070698, -0.00562194, 0.765375)
+bones/21/rotation = Quaternion(0.363872, 0.0041381, -0.0508072, 0.930053)
+
+[node name="mouth_test" parent="bones/Skeleton3D" index="0"]
+transform = Transform3D(0.246455, 0.00650147, 0.041444, -0.0419062, 0.0267613, 0.245006, 0.0019352, -0.248479, 0.0274717, -0.0274277, 0.40153, 0.598611)
+
+[node name="shades" parent="bones/Skeleton3D" index="1"]
+transform = Transform3D(0.246455, 0.00650147, 0.041444, -0.0419062, 0.0267613, 0.245006, 0.0019352, -0.248479, 0.0274717, -0.0274277, 0.40153, 0.598611)
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "idle"

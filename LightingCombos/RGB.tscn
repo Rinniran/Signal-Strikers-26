@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://tuo12qc2leqk"]
+
+[node name="Rgb" type="Node3D" unique_id=662742420]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1399112089]
+transform = Transform3D(0.32187933, 0.556304, -0.7661068, -0.21548411, 0.8309789, 0.51287496, 0.92193294, 0, 0.38734958, 0, 0, 0)
+light_color = Color(1, 0.2050629, 0.15320405, 1)
+light_energy = 3.595
+light_indirect_energy = 9.174
+light_angular_distance = 10.27
+light_specular = 2.826
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=989601234]
+transform = Transform3D(0.303897, -0.5792649, 0.7563721, -0.16934152, 0.7484348, 0.6412245, -0.93753403, -0.32295138, 0.12935354, 0, 0, 0)
+light_color = Color(0.14999998, 1, 0.14999998, 1)
+light_energy = 3.355
+light_indirect_energy = 7.851
+light_specular = 4.81
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=9081029]
+transform = Transform3D(-0.3450266, 0.9107818, -0.22678885, -0.04457093, -0.25725263, -0.9653157, -0.937534, -0.32295138, 0.12935346, 0, 0, 0)
+light_color = Color(0, 0.0333333, 1, 1)
+light_energy = 2.826
+light_indirect_energy = 6.661
+light_volumetric_fog_energy = 5.207
+light_specular = 7.851
+light_bake_mode = 1
+sky_mode = 1

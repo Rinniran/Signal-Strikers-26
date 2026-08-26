@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://efgl1xpucra4"
+path="res://.godot/imported/HPFont.fnt-2810eb0b2bbff05c8c33c1041c819234.fontdata"
+
+[deps]
+
+source_file="res://TEX/UI/HPFont.fnt"
+dest_files=["res://.godot/imported/HPFont.fnt-2810eb0b2bbff05c8c33c1041c819234.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

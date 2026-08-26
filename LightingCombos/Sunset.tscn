@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://lnt5oa2p5f5h"]
+
+[node name="Sunset" type="Node3D" unique_id=184557601]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1675936476]
+transform = Transform3D(-0.49485126, 0.019966152, -0.8687483, -0.8689777, -0.011369999, 0.49472064, 0, 0.999736, 0.022976598, 0.5017395, 0, 2.8121057)
+light_color = Color(1, 0, 0, 1)
+light_energy = 4.678
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=2052310373]
+transform = Transform3D(-0.30894718, -0.021852564, 0.9508281, 0.95107925, -0.0070985593, 0.30886573, 0, 0.99973613, 0.0229766, 0.5017395, 0, 2.8121057)
+light_color = Color(1, 0.5, 0, 1)
+light_energy = 4.678
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=1658570069]
+transform = Transform3D(0.99998593, 0.00012182323, -0.005300702, -0.0022070075, 0.91856223, -0.39527068, 0.0048210905, 0.39527684, 0.9185494, 0.5017395, 0, 2.8121057)
+light_color = Color(1, 0.8833333, 0, 1)
+light_energy = 2.009
+sky_mode = 1

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bjp8c2lrq55sr"]
+
+[node name="Lava" type="Node3D" unique_id=2032845933]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1988679638]
+transform = Transform3D(1, 0, 0, 0, 0.022074293, -0.99975634, 0, 0.99975634, 0.022074293, 0.5017395, 0, 2.8121057)
+light_color = Color(1, 0, 0, 1)
+light_energy = 3.488
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=910664438]
+transform = Transform3D(1, 0, 0, 0, 0.64047503, 0.7679789, 0, -0.7679789, 0.64047503, 0.5017395, 0, 2.8121057)
+light_color = Color(0, 0.02449986, 0.49, 1)
+light_energy = 3.488
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="." unique_id=1711059115]
+transform = Transform3D(1, 0, 0, 0, -0.81863004, 0.5743215, 0, -0.5743215, -0.81863004, 0.5017395, 0, 2.8121057)
+light_color = Color(0.28050008, 0, 0.51, 1)
+light_energy = 3.438
+sky_mode = 1

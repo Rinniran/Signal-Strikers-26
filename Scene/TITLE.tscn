@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://k767p6cqilv1"]
+
+[ext_resource type="Texture2D" uid="uid://qg6w0vg0k2f1" path="res://TEX/UI/Logo.png" id="1_n5sr5"]
+
+[sub_resource type="Animation" id="Animation_n5sr5"]
+resource_name = "Default"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3haj3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ofxyd"]
+_data = {
+&"Default": SubResource("Animation_n5sr5"),
+&"RESET": SubResource("Animation_3haj3")
+}
+
+[node name="Control" type="Control" unique_id=980636344]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=1194481779]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(157, 65)
+texture = ExtResource("1_n5sr5")
+
+[node name="Label" type="Label" parent="." unique_id=626433249]
+layout_mode = 0
+offset_top = 192.0
+offset_right = 319.0
+offset_bottom = 215.0
+text = "PRESS START"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="AnimationPlayer" parent="." unique_id=289236937]
+libraries/ = SubResource("AnimationLibrary_ofxyd")
+autoplay = &"Default"

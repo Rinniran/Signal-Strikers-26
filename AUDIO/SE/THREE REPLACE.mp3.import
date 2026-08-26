@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceev0nyql0lrq"
+path="res://.godot/imported/THREE REPLACE.mp3-7e2f0541f312fb1d7cb12b2663fcc189.mp3str"
+
+[deps]
+
+source_file="res://AUDIO/SE/THREE REPLACE.mp3"
+dest_files=["res://.godot/imported/THREE REPLACE.mp3-7e2f0541f312fb1d7cb12b2663fcc189.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

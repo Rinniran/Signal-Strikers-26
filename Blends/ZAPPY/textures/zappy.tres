@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://do10lmn58nd8i"]
+
+[ext_resource type="Texture2D" uid="uid://dwyqt5u7ewy3m" path="res://CHARACTERMESH/ZAPPY/zappy_low.png" id="1_v1icd"]
+
+[resource]
+resource_name = "zappy"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 2
+albedo_texture = ExtResource("1_v1icd")
+roughness = 0.5
+texture_filter = 2

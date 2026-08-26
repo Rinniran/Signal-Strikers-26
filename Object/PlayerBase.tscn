@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://jlpqc71a3kjl"]
+
+[ext_resource type="Script" uid="uid://bt82u26cr4fqw" path="res://SRC/player.gd" id="1_t73xa"]
+[ext_resource type="Resource" uid="uid://dq0pd85l70se5" path="res://Resource/PLAYERDATA/Rian.tres" id="2_ugf2h"]
+[ext_resource type="Script" uid="uid://cadv6wc8ynnki" path="res://SRC/StateMachine.gd" id="3_ugf2h"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_25lc4"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_25lc4"]
+lightmap_size_hint = Vector2i(17, 14)
+radial_segments = 7
+rings = 2
+
+[node name="PlayerBase" type="CharacterBody3D" unique_id=1762745754]
+script = ExtResource("1_t73xa")
+chardata = ExtResource("2_ugf2h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=711186884]
+shape = SubResource("CapsuleShape3D_25lc4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=623476712]
+mesh = SubResource("CapsuleMesh_25lc4")
+
+[node name="StateMachine" type="Node" parent="." unique_id=1661968280]
+script = ExtResource("3_ugf2h")
+root_node_path = NodePath("..")
+
+[node name="StateMachineCPU" type="Node" parent="." unique_id=1615982220]
+script = ExtResource("3_ugf2h")
+root_node_path = NodePath("..")

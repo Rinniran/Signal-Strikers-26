@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bofqochnm0hwd"
+path="res://.godot/imported/air attack.wav-292066e65249c55acbe0ea673b427e72.sample"
+
+[deps]
+
+source_file="res://AUDIO/SE/DREAMSHOCK/air attack.wav"
+dest_files=["res://.godot/imported/air attack.wav-292066e65249c55acbe0ea673b427e72.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
