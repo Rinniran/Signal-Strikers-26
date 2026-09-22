@@ -2,6 +2,8 @@
 extends CharacterBody3D
 class_name Character
 
+@export var ControllerIndex: int = -1
+
 @export var chardata:Playerdata
 @export var rotation_speed : float = TAU * 1.8
 var _theta:float 
@@ -49,8 +51,8 @@ func direction_string_to_vector2(direction_string: String) -> Vector2:
 	if direction_string == "down":
 		vec = Vector2.DOWN
 	return vec.rotated(camera.rotation.y)
-	assert(false, "Invalid direction")
-	return Vector2.ZERO
+	#assert(false, "Invalid direction")
+	#return Vector2.ZERO
 
 func update_facing_direction():
 	# Set the direction for the hitbox and attacks
@@ -58,10 +60,15 @@ func update_facing_direction():
 		facing_direction_3d = sign(facing_direction.x)
 	if !is_zero_approx(facing_direction.z):
 		facing_direction_3d = sign(facing_direction.z)
+
 func get_input_vector() -> Vector2:
-	return Vector2(int(Input.get_axis("Left","Right")), int(Input.get_axis("Forward","Back")))
+	if Input.get_connected_joypads().is_empty():
+		return Vector2(int(Input.get_axis("Left","Right")), int(Input.get_axis("Forward","Back")))
+	else: 
+		return Vector2(Input.get_joy_axis(ControllerIndex, JOY_AXIS_LEFT_X), Input.get_joy_axis(ControllerIndex, JOY_AXIS_LEFT_Y))
 
 func get_movement_vector() -> Vector2:
+	if !camera: return Vector2.ZERO
 	return get_input_vector().rotated(-camera.rotation.y).normalized()
 
 func _physics_process(delta: float) -> void:

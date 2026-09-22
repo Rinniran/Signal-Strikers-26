@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://k767p6cqilv1"]
 
+[ext_resource type="Script" uid="uid://c7wnquvwqg4r4" path="res://Scene/UI/TitleScreen.gd" id="1_3haj3"]
 [ext_resource type="Texture2D" uid="uid://qg6w0vg0k2f1" path="res://TEX/UI/Logo.png" id="1_n5sr5"]
 
 [sub_resource type="Animation" id="Animation_n5sr5"]
@@ -46,6 +47,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3haj3")
 
 [node name="Logo" type="Sprite2D" parent="." unique_id=1194481779]
 texture_filter = 1

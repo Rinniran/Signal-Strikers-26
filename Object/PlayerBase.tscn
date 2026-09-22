@@ -12,6 +12,7 @@ radial_segments = 7
 rings = 2
 
 [node name="PlayerBase" type="CharacterBody3D" unique_id=1762745754]
+collision_layer = 2
 script = ExtResource("1_t73xa")
 chardata = ExtResource("2_ugf2h")
 

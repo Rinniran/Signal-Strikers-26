@@ -1,7 +1,8 @@
 extends Marker3D
+class_name PlayerCamera
 
-@export var target:Node
-@export var player:Node
+@export var target:Node3D
+@export var player:Node3D
 
 var sensitivity = 500
 # Called when the node enters the scene tree for the first time.
@@ -27,7 +28,7 @@ func _process(delta: float) -> void:
 
 
 func _look_at_target_interpolated(weight:float) -> void:
-	var xform := transform # your transform
+	var xform := global_transform # your transform
 	xform = xform.looking_at(target.global_position,Vector3.UP)
 	transform = transform.interpolate_with(xform,weight)
 

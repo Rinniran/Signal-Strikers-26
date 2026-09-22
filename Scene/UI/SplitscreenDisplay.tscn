@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dcs2u8trui208"]
+
+[ext_resource type="Script" uid="uid://kpitkli844dp" path="res://SRC/SplitscreenDisplay.gd" id="1_iuncw"]
+[ext_resource type="PackedScene" uid="uid://bl0v066ggglsj" path="res://Scene/STAGES/TestScene.tscn" id="2_av55p"]
+
+[node name="SplitscreenDisplay" type="Node" unique_id=2047339126]
+script = ExtResource("1_iuncw")
+
+[node name="container" type="HBoxContainer" parent="." unique_id=1678714745]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TestScene" parent="." unique_id=172071353 instance=ExtResource("2_av55p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="spawnA" type="Marker3D" parent="." unique_id=1618759817]
+
+[node name="spawnB" type="Marker3D" parent="." unique_id=820749211]
+transform = Transform3D(1, 2.0398077e-09, -4.761893e-11, -2.0398077e-09, 0.9989106, -0.04666536, -4.761893e-11, 0.04666536, 0.9989106, 0, 0, -3.9072294)

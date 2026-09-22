@@ -1,8 +1,17 @@
 [gd_scene format=3 uid="uid://bl0v066ggglsj"]
 
-[ext_resource type="PackedScene" uid="uid://bkslkndth6h2r" path="res://Object/Characters/RIAN/Rian.tscn" id="1_k6fum"]
-[ext_resource type="PackedScene" uid="uid://bnxbd380sviwo" path="res://Object/GameCam.tscn" id="3_scgex"]
 [ext_resource type="PackedScene" uid="uid://c2245wkkn5np5" path="res://LightingCombos/Night.tscn" id="3_tjli5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2bic2"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_3ypbs"]
+sky_material = SubResource("ProceduralSkyMaterial_2bic2")
+
+[sub_resource type="Environment" id="Environment_k6fum"]
+background_mode = 2
+sky = SubResource("Sky_3ypbs")
 
 [sub_resource type="BoxMesh" id="BoxMesh_25lc4"]
 size = Vector3(40.50353, 0.585083, 38.765625)
@@ -16,6 +25,9 @@ data = PackedVector3Array(-20.251799, 0.2925, 19.3828, 20.251799, 0.2925, 19.382
 
 [node name="TestScene" type="Node3D" unique_id=172071353]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1969941510]
+environment = SubResource("Environment_k6fum")
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2640261]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55125237, -0.28723693, -3.727539)
 mesh = SubResource("BoxMesh_25lc4")
@@ -25,14 +37,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_b3j4n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=606412603]
 shape = SubResource("ConcavePolygonShape3D_k6fum")
-
-[node name="Rian" parent="." unique_id=1762745754 node_paths=PackedStringArray("camera") instance=ExtResource("1_k6fum")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5059562, 0.6160488, -1.3977394)
-camera = NodePath("../CamPivot")
-
-[node name="CamPivot" parent="." unique_id=944038594 node_paths=PackedStringArray("player") instance=ExtResource("3_scgex")]
-transform = Transform3D(1, 0, 0, 0, 0.93713, 0.348981, 0, -0.348981, 0.93713, 0.6674186, 3.86616, -7.776569)
-player = NodePath("../Rian")
 
 [node name="Night" parent="." unique_id=1593303374 instance=ExtResource("3_tjli5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8531475, 0, -0.072942734)
