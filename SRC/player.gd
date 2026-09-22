@@ -69,7 +69,9 @@ func get_input_vector() -> Vector2:
 
 func get_movement_vector() -> Vector2:
 	if !camera: return Vector2.ZERO
-	return get_input_vector().rotated(-camera.rotation.y).normalized()
+	var movement = get_input_vector().rotated(-camera.rotation.y)
+	if movement.length() > 1.0: movement = movement.normalized()
+	return movement
 
 func _physics_process(delta: float) -> void:
 	#Input.mouse_mode = Input.MOUSE_MODE_CONFINED_HIDDEN
@@ -97,7 +99,7 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var acceleration_vector: Vector2
-	var input_dir := get_input_vector()
+	#var input_dir := get_input_vector()
 	var direction := get_movement_vector()
 	if direction:
 		_theta = wrapf(atan2(-direction.x, -direction.y) - rotation.y, -PI, PI)

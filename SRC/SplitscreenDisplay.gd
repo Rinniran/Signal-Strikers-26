@@ -14,5 +14,6 @@ func setup(players: Array[Character]) :
 		var pv := PLAYER_VIEW.instantiate()
 		container.add_child(pv)
 		pv.player = players[i]
+		pv.player.ControllerIndex = i
 		pv.enemy = players[i - 1] #Using the wrapping of negative array indices we can just fetch the other player in the array with this
 		players[i].global_position = spawnpoints[i].global_position
