@@ -6,14 +6,17 @@ const PLAYER_VIEW = preload("uid://dwo1ghv176jy3")
 @onready var spawnpoints: Array[Node3D] = [$spawnA, $spawnB]
 
 func _ready() -> void:
-	setup([RIAN.instantiate(), RIAN.instantiate()])
+	var p1 = RIAN.instantiate()
+	p1.ControllerIndex = -1
+	var p2 = RIAN.instantiate()
+	p2.ControllerIndex = 0
+	setup([p1, p2])
 
 # Set up players and views. Only supports 2 players at the moment, might change it later
 func setup(players: Array[Character]) :
-	for i in range(2):
+	for i in range(players.size()):
 		var pv := PLAYER_VIEW.instantiate()
 		container.add_child(pv)
 		pv.player = players[i]
-		pv.player.ControllerIndex = i
 		pv.enemy = players[i - 1] #Using the wrapping of negative array indices we can just fetch the other player in the array with this
 		players[i].global_position = spawnpoints[i].global_position

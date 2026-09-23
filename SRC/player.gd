@@ -62,7 +62,7 @@ func update_facing_direction():
 		facing_direction_3d = sign(facing_direction.z)
 
 func get_input_vector() -> Vector2:
-	if Input.get_connected_joypads().is_empty():
+	if ControllerIndex == -1:
 		return Vector2(int(Input.get_axis("Left","Right")), int(Input.get_axis("Forward","Back")))
 	else: 
 		return Vector2(Input.get_joy_axis(ControllerIndex, JOY_AXIS_LEFT_X), Input.get_joy_axis(ControllerIndex, JOY_AXIS_LEFT_Y))
