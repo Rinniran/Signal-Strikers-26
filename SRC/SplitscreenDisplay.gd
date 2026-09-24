@@ -1,15 +1,21 @@
 extends Node
 
 const RIAN = preload("uid://bkslkndth6h2r")
+const ZAPPY = preload("uid://c5u83egpcslmo")
+
 const PLAYER_VIEW = preload("uid://dwo1ghv176jy3")
 @onready var container: HBoxContainer = $container
 @onready var spawnpoints: Array[Node3D] = [$spawnA, $spawnB]
 
 func _ready() -> void:
 	var p1 = RIAN.instantiate()
-	p1.ControllerIndex = -1
-	var p2 = RIAN.instantiate()
-	p2.ControllerIndex = 0
+	var p2 = ZAPPY.instantiate()
+	if Input.get_connected_joypads().size() == 1:
+		p1.ControllerIndex = -1
+		p2.ControllerIndex = 0
+	elif Input.get_connected_joypads().size() > 1:
+		p1.ControllerIndex = 0
+		p2.ControllerIndex = 1
 	setup([p1, p2])
 
 # Set up players and views. Only supports 2 players at the moment, might change it later

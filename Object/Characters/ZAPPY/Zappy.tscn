@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c5u83egpcslmo"]
+
+[ext_resource type="Script" uid="uid://d024mhy0v2n8g" path="res://Object/Characters/RIAN/rian.gd" id="1_64sei"]
+[ext_resource type="Resource" uid="uid://dq0pd85l70se5" path="res://Resource/PLAYERDATA/Rian.tres" id="2_srkx8"]
+[ext_resource type="Script" uid="uid://cadv6wc8ynnki" path="res://SRC/StateMachine.gd" id="3_3jhta"]
+[ext_resource type="Script" uid="uid://b76k1rlnekikc" path="res://Object/Characters/RIAN/BASESTATES/Idle.gd" id="4_ixrne"]
+[ext_resource type="Script" uid="uid://g6neud6whrd" path="res://Object/Characters/RIAN/BASESTATES/Move.gd" id="5_wdy48"]
+[ext_resource type="Script" uid="uid://cbcml1oblom77" path="res://Object/Characters/RIAN/BASESTATES/Jump.gd" id="6_kif87"]
+[ext_resource type="Script" uid="uid://cedofh331p4nq" path="res://Object/Characters/RIAN/BASESTATES/Fall.gd" id="7_4k5bg"]
+[ext_resource type="Script" uid="uid://4tgyl85c2cgf" path="res://Object/Characters/RIAN/BASESTATES/Dash3D.gd" id="8_m02fo"]
+[ext_resource type="Script" uid="uid://baq8t7vnf5u86" path="res://Object/Characters/RIAN/BASESTATES/DashAttack3D.gd" id="9_56ctc"]
+[ext_resource type="PackedScene" uid="uid://cn1v6qi6vgh70" path="res://Blends/ZAPPY/zappy_model.tscn" id="10_srkx8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_25lc4"]
+radius = 0.3803711
+
+[node name="zappy" type="CharacterBody3D" unique_id=1762745754]
+script = ExtResource("1_64sei")
+chardata = ExtResource("2_srkx8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=711186884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9803964, 0)
+shape = SubResource("CapsuleShape3D_25lc4")
+
+[node name="StateMachine" type="Node" parent="." unique_id=1661968280]
+script = ExtResource("3_3jhta")
+root_node_path = NodePath("..")
+
+[node name="Idle" type="Node" parent="StateMachine" unique_id=1525304075]
+script = ExtResource("4_ixrne")
+
+[node name="Move" type="Node" parent="StateMachine" unique_id=262461025]
+script = ExtResource("5_wdy48")
+
+[node name="Jump" type="Node" parent="StateMachine" unique_id=1845485487]
+script = ExtResource("6_kif87")
+
+[node name="Fall" type="Node" parent="StateMachine" unique_id=986200652]
+script = ExtResource("7_4k5bg")
+
+[node name="Dash" type="Node" parent="StateMachine" unique_id=1366899257]
+script = ExtResource("8_m02fo")
+
+[node name="DashAttack" type="Node" parent="StateMachine" unique_id=452787897]
+script = ExtResource("9_56ctc")
+
+[node name="StateMachineCPU" type="Node" parent="." unique_id=1615982220]
+script = ExtResource("3_3jhta")
+root_node_path = NodePath("..")
+
+[node name="zappy rig" parent="." unique_id=1365964538 instance=ExtResource("10_srkx8")]
+transform = Transform3D(-7.649493e-09, 0, 0.175, 0, 0.175, 0, -0.175, 0, -7.649493e-09, 0, 1.1346914, 0)
